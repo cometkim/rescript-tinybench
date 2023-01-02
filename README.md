@@ -4,7 +4,7 @@ ReScript bindings to [tinybench](https://github.com/tinylibs/tinybench)
 
 ## Usage
 
-```
+```res
 open RescriptTinybench
 
 let bench =
