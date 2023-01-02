@@ -37,7 +37,7 @@ let run = async () => {
         Js.log("")
       }
 
-    | {name} => Js.log(`Error occured while running bench ${name}`)
+    | {name} => Js.log(`Task "${name}" has no results yet`)
     }
   })
 }
