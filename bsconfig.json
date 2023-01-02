@@ -1,0 +1,23 @@
+{
+  "name": "rescript-tinybench",
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "examples",
+      "type": "dev"
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "bs-dependencies": [
+  ],
+  "bs-dev-dependencies": [
+  ]
+}
