@@ -1,0 +1,33 @@
+{
+  "name": "rescript-tinybench",
+  "description": "ReScript bidnings to tinybench",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cometkim/rescript-tinybench.git"
+  },
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "hey@hyeseong.kim"
+  },
+  "keywords": [
+    "rescript",
+    "rescript-bindings",
+    "benchmark"
+  ],
+  "packageManager": "yarn@3.3.1",
+  "files": [
+    "bsconfig.json",
+    "src/*.res"
+  ],
+  "peerDependencies": {
+    "rescript": "^10.1.0"
+  },
+  "dependencies": {
+    "tinybench": "^2.3.1"
+  },
+  "devDependencies": {
+    "rescript": "^10.1.0"
+  }
+}
