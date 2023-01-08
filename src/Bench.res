@@ -42,6 +42,7 @@ type t = {
   warmup: (. unit) => Js.Promise2.t<unit>,
   reset: (. unit) => unit,
   tasks: array<Task.t>,
+  results: array<option<Task.result>>,
 }
 
 type options
@@ -72,6 +73,9 @@ external add: (t, string, unit => unit) => t = "add"
 external addAsync: (t, string, unit => Js.Promise2.t<unit>) => t = "add"
 
 @send
+external remove: (t, string) => t = "remove"
+
+@send
 external run: t => Js.Promise.t<unit> = "run"
 
 @send
@@ -80,5 +84,11 @@ external warmup: t => Js.Promise.t<unit> = "warmup"
 @send
 external reset: t => unit = "reset"
 
+@send
+external task: (t, string) => option<Task.t> = "task"
+
 @get
 external tasks: t => array<Task.t> = "tasks"
+
+@get
+external results: t => array<option<Task.result>> = "tasks"
