@@ -39,6 +39,7 @@ module Task = {
 
 type t = {
   run: (. unit) => Js.Promise2.t<unit>,
+  warmup: (. unit) => Js.Promise2.t<unit>,
   tasks: array<Task.t>,
 }
 
@@ -71,6 +72,9 @@ external addAsync: (t, string, unit => Js.Promise2.t<unit>) => t = "add"
 
 @send
 external run: t => Js.Promise.t<unit> = "run"
+
+@send
+external warmup: t => Js.Promise.t<unit> = "warmup"
 
 @get
 external tasks: t => array<Task.t> = "tasks"
