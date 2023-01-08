@@ -40,6 +40,7 @@ module Task = {
 type t = {
   run: (. unit) => Js.Promise2.t<unit>,
   warmup: (. unit) => Js.Promise2.t<unit>,
+  reset: (. unit) => unit,
   tasks: array<Task.t>,
 }
 
@@ -75,6 +76,9 @@ external run: t => Js.Promise.t<unit> = "run"
 
 @send
 external warmup: t => Js.Promise.t<unit> = "warmup"
+
+@send
+external reset: t => unit = "reset"
 
 @get
 external tasks: t => array<Task.t> = "tasks"
