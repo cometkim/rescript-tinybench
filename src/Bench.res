@@ -43,6 +43,7 @@ type t = {
   reset: (. unit) => unit,
   table: (. unit) => Js.Dict.t<string>,
   tasks: array<Task.t>,
+  todos: array<Task.t>,
   results: array<option<Task.result>>,
 }
 
@@ -72,6 +73,9 @@ external add: (t, string, unit => unit) => t = "add"
 
 @send
 external addAsync: (t, string, unit => Js.Promise2.t<unit>) => t = "add"
+
+@send
+external todo: (t, string) => t = "todo"
 
 @send
 external remove: (t, string) => t = "remove"

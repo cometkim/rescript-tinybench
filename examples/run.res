@@ -16,6 +16,9 @@ let bench =
     b := a.contents - b.contents
     a := b.contents - a.contents
   })
+  ->Bench.todo("unimplemented bench")
 
 await bench.run(.)
+
 bench.table(.)->Console.table
+bench.todos->Array.map(({name}) => {name})->Console.table
