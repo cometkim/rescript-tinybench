@@ -25,7 +25,7 @@
     "rescript": "^10.1.0 || ^11.0.0-alpha.0"
   },
   "dependencies": {
-    "tinybench": "^2.3.1"
+    "tinybench": "^2.5.0"
   },
   "devDependencies": {
     "rescript": "^10.1.4"

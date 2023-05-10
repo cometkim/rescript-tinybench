@@ -10,7 +10,7 @@ __metadata:
   resolution: "rescript-tinybench@workspace:."
   dependencies:
     rescript: ^10.1.4
-    tinybench: ^2.3.1
+    tinybench: ^2.5.0
   peerDependencies:
     rescript: ^10.1.0 || ^11.0.0-alpha.0
   languageName: unknown
@@ -28,9 +28,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinybench@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "tinybench@npm:2.3.1"
-  checksum: 74d45fa546d964a8123f98847fc59550945ed7f0d3e5a4ce0f9596d836b51c1d340c2ae0277a8023c15dc9ea3d7cb948a79173bfc46338c9b367c6323ea1eaf3
+"tinybench@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "tinybench@npm:2.5.0"
+  checksum: 284bb9428f197ec8b869c543181315e65e41ccfdad3c4b6c916bb1fdae1b5c6785661b0d90cf135b48d833b03cb84dc5357b2d33ec65a1f5971fae0ab2023821
   languageName: node
   linkType: hard
