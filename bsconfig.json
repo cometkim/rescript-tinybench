@@ -1,5 +1,6 @@
 {
   "name": "rescript-tinybench",
+  "namespace": true,
   "suffix": ".bs.mjs",
   "sources": [
     {
