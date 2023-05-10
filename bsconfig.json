@@ -1,6 +1,6 @@
 {
   "name": "rescript-tinybench",
-  "suffix": ".bs.js",
+  "suffix": ".bs.mjs",
   "sources": [
     {
       "dir": "src"
@@ -12,12 +12,15 @@
   ],
   "package-specs": [
     {
-      "module": "commonjs",
+      "module": "es6",
       "in-source": true
     }
+  ],
+  "bsc-flags": [
   ],
   "bs-dependencies": [
   ],
   "bs-dev-dependencies": [
+    "@rescript/core"
   ]
 }

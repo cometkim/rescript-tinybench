@@ -5,10 +5,20 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@rescript/core@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@rescript/core@npm:0.3.1"
+  peerDependencies:
+    rescript: "*"
+  checksum: 65d69c6d0ea55ef4d8de1e51b42ebb0822e007349580ac2cb0f1981c64b817538124f92247cd7d5e882cd9299c98a2d48d7512fc9ab114160c5209dafdde1412
+  languageName: node
+  linkType: hard
+
 "rescript-tinybench@workspace:.":
   version: 0.0.0-use.local
   resolution: "rescript-tinybench@workspace:."
   dependencies:
+    "@rescript/core": ^0.3.1
     rescript: ^10.1.4
     tinybench: ^2.5.0
   peerDependencies:

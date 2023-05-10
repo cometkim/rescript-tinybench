@@ -11,4 +11,4 @@ node_modules/
 .pnp.*
 
 lib/bs/
-*.bs.js
+*.bs.mjs

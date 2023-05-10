@@ -16,7 +16,9 @@
     "rescript-bindings",
     "benchmark"
   ],
-  "packageManager": "yarn@3.3.1",
+  "scripts": {
+    "build": "rescript build"
+  },
   "files": [
     "bsconfig.json",
     "src/*.res"
@@ -28,6 +30,8 @@
     "tinybench": "^2.5.0"
   },
   "devDependencies": {
+    "@rescript/core": "^0.3.1",
     "rescript": "^10.1.4"
-  }
+  },
+  "packageManager": "yarn@3.3.1"
 }

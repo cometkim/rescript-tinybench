@@ -41,6 +41,7 @@ type t = {
   run: (. unit) => Js.Promise2.t<unit>,
   warmup: (. unit) => Js.Promise2.t<unit>,
   reset: (. unit) => unit,
+  table: (. unit) => Js.Dict.t<string>,
   tasks: array<Task.t>,
   results: array<option<Task.result>>,
 }
@@ -92,3 +93,6 @@ external tasks: t => array<Task.t> = "tasks"
 
 @get
 external results: t => array<option<Task.result>> = "tasks"
+
+@send
+external table: t => Js.Dict.t<string> = "table"
